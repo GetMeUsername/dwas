@@ -28,7 +28,7 @@ function uploadBackground() {
 function uploadrover() {
     ctx.drawImage(rover_imgTag, rover_x, rover_y, rover_width, rover_height);
 }
-
+window.addEventListener("keydown",my_keydown);
 function my_keydown(e)
 {
     keyPressed = e.keyCode;
@@ -66,7 +66,7 @@ function up()
     if(rover_y>=0)
     {
         rover_y-= 10;
-        console.log("when up arrow is pressed="+rover_x+"-"+rover_y)
+        console.log("When up arrow is pressed="+rover_x+"-"+rover_y)
         uploadBackground();
         uploadrover();
     }
@@ -76,7 +76,7 @@ function down()
     if(rover_y<=500)
     {
         rover_y+= 10;
-        console.log("when down arrow is pressed,x="+rover_x+",y="+rover_y);
+        console.log("When down arrow is pressed,x="+rover_x+",y="+rover_y);
         uploadBackground();
         uploadrover();
     }
@@ -86,7 +86,7 @@ function left()
     if(rover_x>=0)
     {
         rover_x-= 10;
-        console.log("when left arrow is pressed,x="+rover_x+",y="+rover_y);
+        console.log("When left arrow is pressed,x="+rover_x+",y="+rover_y);
         uploadBackground();
         uploadrover();
     }
@@ -96,7 +96,7 @@ function right()
     if(rover_x<=700)
     {
         rover_x-= 10;
-        console.log("when right arrow is pressed,x="+rover_x+",y="+rover_y);
+        console.log("When right arrow is pressed,x="+rover_x+",y="+rover_y);
         uploadBackground();
         uploadrover();
     }
