@@ -95,7 +95,7 @@ function right()
 {
     if(rover_x<=700)
     {
-        rover_x-= 10;
+        rover_x+= 10;
         console.log("When right arrow is pressed,x="+rover_x+",y="+rover_y);
         uploadBackground();
         uploadrover();
